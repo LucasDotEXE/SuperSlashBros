@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSuperSlashBros", "Cli
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TcpClientServerShared", "C:\Users\lucas\source\repos\TI-2.1-TMTI-CSHARP-Voorbeelden\Les 3\ShareClientServer\TcpClientServerShared.shproj", "{EF98354B-D9F8-4613-8E5A-01E8F47156DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSLashWPF", "SuperSLashWPF\SuperSLashWPF.csproj", "{800A6BF4-DBE6-4BCC-9888-7C8FFD2AB248}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		C:\Users\lucas\source\repos\TI-2.1-TMTI-CSHARP-Voorbeelden\Les 3\ShareClientServer\ShareClientServer.projitems*{54b9d813-b83c-4f06-a7ca-30bc1ac0065a}*SharedItemsImports = 4
@@ -28,6 +30,10 @@ Global
 		{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800A6BF4-DBE6-4BCC-9888-7C8FFD2AB248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800A6BF4-DBE6-4BCC-9888-7C8FFD2AB248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800A6BF4-DBE6-4BCC-9888-7C8FFD2AB248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800A6BF4-DBE6-4BCC-9888-7C8FFD2AB248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
