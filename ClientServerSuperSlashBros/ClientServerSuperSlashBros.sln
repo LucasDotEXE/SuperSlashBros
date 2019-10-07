@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSuperSlashBros", "ClientServerSuperSlashBros\ServerSuperSlashBros.csproj", "{54B9D813-B83C-4F06-A7CA-30BC1AC0065A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSuperSlashBros", "Client\ClientSuperSlashBros.csproj", "{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TcpClientServerShared", "C:\Users\lucas\source\repos\TI-2.1-TMTI-CSHARP-Voorbeelden\Les 3\ShareClientServer\TcpClientServerShared.shproj", "{EF98354B-D9F8-4613-8E5A-01E8F47156DF}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		C:\Users\lucas\source\repos\TI-2.1-TMTI-CSHARP-Voorbeelden\Les 3\ShareClientServer\ShareClientServer.projitems*{54b9d813-b83c-4f06-a7ca-30bc1ac0065a}*SharedItemsImports = 4
+		C:\Users\lucas\source\repos\TI-2.1-TMTI-CSHARP-Voorbeelden\Les 3\ShareClientServer\ShareClientServer.projitems*{6eb60a6c-0c64-4d5c-9caf-2fcfd3c6e388}*SharedItemsImports = 4
+		C:\Users\lucas\source\repos\TI-2.1-TMTI-CSHARP-Voorbeelden\Les 3\ShareClientServer\ShareClientServer.projitems*{ef98354b-d9f8-4613-8e5a-01e8f47156df}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54B9D813-B83C-4F06-A7CA-30BC1AC0065A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B9D813-B83C-4F06-A7CA-30BC1AC0065A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B9D813-B83C-4F06-A7CA-30BC1AC0065A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B9D813-B83C-4F06-A7CA-30BC1AC0065A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB60A6C-0C64-4D5C-9CAF-2FCFD3C6E388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0458B5E9-CBD6-49F0-B1B9-0247AEABD9FF}
+	EndGlobalSection
+EndGlobal
