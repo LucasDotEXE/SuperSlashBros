@@ -11,12 +11,13 @@ namespace ClientServerConnectionLib
 {
     public abstract class DataPacketHandler
     {
-        public void handlePacket(String packetJson)
+        public bool handlePacket(String packetJson)
         {
 
             dynamic jsonPacket = JsonConvert.DeserializeObject(packetJson);
             int type = jsonPacket.type;
             dynamic parameters = jsonPacket.parameters;
+            
 
             switch (type)
             {
@@ -29,13 +30,16 @@ namespace ClientServerConnectionLib
                 case (int)DataPacketType.HIT:
                     HandleHit(parameters);
                     break;
+                case (int)DataPacketType.STOP_CONNECTION:
+                    return HandleStop(parameters);
                 default:
 
                     break;
             }
-
+            return true;
         }
 
+        public abstract bool HandleStop(dynamic parameters);
 
         public abstract void HandleMessage(dynamic parameters);
         public abstract void HandlePlayerPos(dynamic parameters);

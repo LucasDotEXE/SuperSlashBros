@@ -9,26 +9,26 @@ namespace ShareClientServer
     {
         public DataPacketType type;
 
-        private List<Tuple<String, dynamic>> parameters;
+        public Dictionary<String, dynamic> parameters;
 
         public DataPacket(DataPacketType type)
         {
             this.type = type;
-            this.parameters = new List<Tuple<string, dynamic>>();
+            this.parameters = new Dictionary<string, dynamic>();
         }
 
         public void clearParams()
         {
-            this.parameters = new List<Tuple<string, dynamic>>();
+            this.parameters = new Dictionary<string, dynamic>();
         }
 
-        public void addParam(Tuple<String, dynamic> param)
+        public void addParam(String paramName, dynamic value)
         {
-            this.parameters.Add(param);
+            this.parameters.Add(paramName, value);
         }
 
 
-        public List<Tuple<string, dynamic>> getParameters()
+        public Dictionary<string, dynamic> getParameters()
         {
             return this.parameters;
         }
@@ -46,6 +46,6 @@ namespace ShareClientServer
 
     public enum DataPacketType
     {
-        MESSAGE, PLAYERPOS, HIT
+        MESSAGE, PLAYERPOS, HIT, STOP_CONNECTION
     }
 }

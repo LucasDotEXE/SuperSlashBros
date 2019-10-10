@@ -15,11 +15,6 @@ namespace ClientServerSuperSlashBros
             Server server = new Server(1234, "GameServer");
             server.startListen();
 
-            //DataPacketHandler handler = new ServerPacketHandler();
-            //DataPacket packet = new DataPacket(DataPacketType.MESSAGE);
-            //handler.handlePacket(packet.getProtocolJson());
-            //Console.ReadLine();
-
             Console.ReadLine();
         }
     }

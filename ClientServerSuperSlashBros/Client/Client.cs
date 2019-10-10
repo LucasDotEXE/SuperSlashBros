@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using ClientServer;
 using ClientServerConnectionLib;
@@ -20,10 +21,7 @@ namespace Client
         private static readonly double VERSION_NR = 1.1;
 
         TcpClient client;
-        private bool connected {
-            get { return connected; }
-            set { this.connected = value; }
-        }
+        public bool connected;
 
         public Client(int port, string name)
         {
@@ -66,6 +64,7 @@ namespace Client
                     this.connected = false;
                 }
             }
+            Thread.Sleep(10);
             return connected;
         }
 
@@ -77,6 +76,11 @@ namespace Client
         public bool disconnect()
         {
             return true;
+        }
+
+        internal void StartListening()
+        {
+            //throw new NotImplementedException();
         }
     }
 
@@ -93,6 +97,11 @@ namespace Client
         }
 
         public override void HandlePlayerPos(dynamic parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool HandleStop(dynamic parameters)
         {
             throw new NotImplementedException();
         }
