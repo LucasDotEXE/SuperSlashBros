@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClientServerConnectionLib;
+using ShareClientServer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,11 @@ namespace ClientServerSuperSlashBros
         {
             Server server = new Server(1234, "GameServer");
             server.startListen();
+
+            //DataPacketHandler handler = new ServerPacketHandler();
+            //DataPacket packet = new DataPacket(DataPacketType.MESSAGE);
+            //handler.handlePacket(packet.getProtocolJson());
+            //Console.ReadLine();
 
             Console.ReadLine();
         }

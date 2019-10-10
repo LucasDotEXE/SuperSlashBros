@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ClientServer;
+using ClientServerConnectionLib;
 
 namespace ClientServerSuperSlashBros
 {
@@ -91,6 +92,24 @@ namespace ClientServerSuperSlashBros
 
         }
 
+    }
+
+    class ServerPacketHandler : DataPacketHandler
+    {
+        public override void HandleHit(dynamic parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void HandleMessage(dynamic parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void HandlePlayerPos(dynamic parameters)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

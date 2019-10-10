@@ -6,6 +6,6 @@ namespace ShareClientServer
 {
     class Config
     {
-        public static readonly double SERVER_VERSION = 1.0;
+       
     }
 }

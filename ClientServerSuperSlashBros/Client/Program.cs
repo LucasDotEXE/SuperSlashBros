@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
-using ClientServer;
+using ShareClientServer;
 
 namespace Client
 {
@@ -18,7 +14,9 @@ namespace Client
             {
                 Thread.Sleep(10);
             }
-            
+            DataPacket message = new DataPacket(ShareClientServer.DataPacketType.MESSAGE);
+            message.addParam(new Tuple<string, dynamic>("mes", "Hello Server How Do you do"));
+            client.SendPacket(message);
             Console.ReadLine();
         }
     }

@@ -6,6 +6,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using ClientServer;
+using ClientServerConnectionLib;
+using ShareClientServer;
 
 namespace Client
 {
@@ -67,9 +69,32 @@ namespace Client
             return connected;
         }
 
+        public void SendPacket(DataPacket dataPacket)
+        {
+            ClientServerUtil.WriteTextMessage(client.GetStream(), dataPacket.getProtocolJson());
+        }
+
         public bool disconnect()
         {
             return true;
+        }
+    }
+
+    class ClientPacketHandler : DataPacketHandler
+    {
+        public override void HandleHit(dynamic parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void HandleMessage(dynamic parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void HandlePlayerPos(dynamic parameters)
+        {
+            throw new NotImplementedException();
         }
     }
 }
