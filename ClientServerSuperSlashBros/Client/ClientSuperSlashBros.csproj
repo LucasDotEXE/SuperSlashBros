@@ -50,6 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <Import Project="C:\Users\lucas\source\repos\TI-2.1-TMTI-CSHARP-Voorbeelden\Les 3\ShareClientServer\ShareClientServer.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\ClientServerConnectionLib\ClientServerConnectionLib.csproj">
+      <Project>{395c1cb8-2f5c-497c-9a0e-b440f6ad1e99}</Project>
+      <Name>ClientServerConnectionLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
