@@ -1,0 +1,15 @@
+﻿<Window x:Class="Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperSLashWPF"
+        mc:Ignorable="d"
+        Title="SuperSlashBros" Height="1080" Width="1920"
+        Keyboard.KeyDown="keydown"
+        Keyboard.KeyUp="keyup"
+        Mouse.MouseDown="mouseclicked">
+    <Grid>
+        <Canvas Name="MainCanvas" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
+    </Grid>
+</Window>

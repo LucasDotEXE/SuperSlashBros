@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSuperSlashBros", "Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientServerConnectionLib", "ClientServerConnectionLib\ClientServerConnectionLib.csproj", "{395C1CB8-2F5C-497C-9A0E-B440F6AD1E99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSlashGameWindow", "Test\SuperSlashGameWindow.csproj", "{1CA2BDD8-81F7-4DBF-AC55-270B5C0DC33A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{395C1CB8-2F5C-497C-9A0E-B440F6AD1E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{395C1CB8-2F5C-497C-9A0E-B440F6AD1E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{395C1CB8-2F5C-497C-9A0E-B440F6AD1E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA2BDD8-81F7-4DBF-AC55-270B5C0DC33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA2BDD8-81F7-4DBF-AC55-270B5C0DC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA2BDD8-81F7-4DBF-AC55-270B5C0DC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA2BDD8-81F7-4DBF-AC55-270B5C0DC33A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
